@@ -1,0 +1,74 @@
+:root {
+  --bg: #eef2f5;
+  --surface: #ffffff;
+  --ink: #14202b;
+  --muted: #5a6b7a;
+  --line: #d3dce4;
+  --pass: #17803d;
+  --pass-bg: #dff3e6;
+  --accent: #14202b;
+  --run: #b26a00;
+  --font: "Public Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f171e; --surface: #17222c; --ink: #e7eef4; --muted: #94a5b4;
+    --line: #2a3a47; --pass: #5fd08a; --pass-bg: #163a28; --accent: #e7eef4; --run: #f0b24a;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1rem/1.65 var(--font); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--run); outline-offset: 2px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+.nav { position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 24px; background: var(--bg); border-bottom: 1px solid var(--line); }
+.brand { font-weight: 800; text-decoration: none; }
+.nav nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.nav nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+.nav nav a:hover { color: var(--ink); }
+
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+h1 { font-size: clamp(3rem, 8vw, 5.5rem); line-height: 1; margin: 0; font-weight: 800; letter-spacing: -.03em; }
+.role { font-size: 1.35rem; font-weight: 500; margin: 12px 0 20px; }
+.lead { max-width: 52ch; color: var(--muted); }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.btn { display: inline-block; padding: 11px 18px; border-radius: 6px; background: var(--accent); color: var(--bg);
+  text-decoration: none; font-weight: 700; border: 2px solid var(--accent); cursor: pointer; font-family: inherit; font-size: .95rem; }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.small { padding: 4px 10px; font-size: .8rem; }
+
+.run { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-family: var(--mono); font-size: .9rem; overflow: hidden; }
+.run-head, .run-foot { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; color: var(--muted); }
+.run-head { border-bottom: 1px solid var(--line); }
+.run-foot { border-top: 1px solid var(--line); color: var(--ink); font-weight: 500; }
+.run ul { list-style: none; margin: 0; padding: 8px 0; }
+.run li { display: flex; gap: 12px; align-items: baseline; padding: 8px 16px; }
+.badge { min-width: 52px; text-align: center; font-size: .75rem; font-weight: 500; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.run li.pass .badge { background: var(--pass-bg); color: var(--pass); border-color: transparent; }
+.run li.running .badge { color: var(--run); border-color: var(--run); }
+.run li.queued { color: var(--muted); }
+
+.sec { padding-top: 56px; padding-bottom: 8px; border-top: 1px solid var(--line); }
+h2 { font-size: 1.8rem; margin: 0 0 20px; letter-spacing: -.01em; }
+h3 { font-size: 1.1rem; margin: 0; }
+.sub { margin-top: 28px; margin-bottom: 8px; }
+.body { max-width: 65ch; }
+.item { margin-bottom: 28px; max-width: 760px; }
+.item-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+.period { font-family: var(--mono); font-size: .85rem; color: var(--muted); }
+.muted { color: var(--muted); margin: 2px 0 8px; }
+.plain { margin: 0; padding-left: 20px; }
+.skills { display: grid; gap: 24px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.chip { padding: 4px 12px; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; font-size: .9rem; }
+.foot { padding-top: 40px; padding-bottom: 40px; color: var(--muted); font-size: .9rem; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; padding-top: 40px; gap: 32px; }
+  .nav { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
