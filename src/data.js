@@ -5,7 +5,7 @@ export const profile = {
   location: "Thrissur, Kerala",
   phone: "+91 96454 93601",
   email: "alwinpeter100@gmail.com",
-  linkedin: "#", // TODO: paste your LinkedIn URL
+  linkedin: "http:www.linkedin.com/in/alwin-qa", // TODO: paste your LinkedIn URL
   resume: "/Alwin_PP.pdf",
   about:
     "I test software by hand and by script. I have worked on manual, API and UI testing, and I have tested embedded software on real hardware. I like finding the defect before the user does, and I write it up so the developer can fix it quickly.",
@@ -15,7 +15,7 @@ export const profile = {
 export const checks = [
   "Manual testing of project modules",
   "API testing with Postman and Swagger",
-  "Automation with Selenium, Java and Cucumber",
+  "Automation with Selenium, Java",
   "Embedded firmware testing on hardware",
   "Defect reporting in Jira",
 ];
@@ -54,7 +54,7 @@ export const education = [
     title: "Advanced Manual and Automation Testing Course",
     place: "AspireIT Academy, Kochi",
     period: "Nov 2024 - Dec 2024",
-    note: "Cucumber, POST APIs and Selenium for automation testing.",
+    note: "POST APIs and Selenium for automation testing.",
   },
   {
     title: "Bachelor of Vocation (B.Voc) in Information Technology",
@@ -62,12 +62,12 @@ export const education = [
     period: "Jul 2021 - Apr 2024",
     note: "CGPA 6.1",
   },
-  {
-    title: "Higher Secondary Certificate (12th)",
-    place: "BVMHSS Kalparamba",
-    period: "Jun 2019 - Mar 2021",
-    note: "88%",
-  },
+  // {
+  //   title: "Higher Secondary Certificate (12th)",
+  //   place: "BVMHSS Kalparamba",
+  //   period: "Jun 2019 - Mar 2021",
+  //   note: "88%",
+  // },
 ];
 
 export const certifications = [
