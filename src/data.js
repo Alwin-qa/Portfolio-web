@@ -7,8 +7,7 @@ export const profile = {
   email: "alwinpeter100@gmail.com",
   linkedin: "https:www.linkedin.com/in/alwin-qa", // TODO: paste your LinkedIn URL
   resume: "/Alwin_PP.pdf",
-  about:
-    "I’m a QA Tester at JIITAK with hands-on experience in UI, functional, and API testing. I have experience in test case design, bug reporting, and retesting using ServiceNow, along with automation testing using Selenium and Java. I’m passionate about improving software quality, learning new technologies, and delivering reliable user experiences.",
+  //’m a QA Tester at JIITAK with hands-on experience in UI, functional, and API testing. I have experience in test case design, bug reporting, and retesting using ServiceNow, along with automation testing using Selenium and Java. I’m passionate about improving software quality, learning new technologies, and delivering reliable user experiences.",
 };
 
 // Shown in the hero as a test run
