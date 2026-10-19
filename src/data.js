@@ -23,6 +23,16 @@ export const checks = [
 
 export const experience = [
   {
+    title: "QA Tester",
+    company: "JIITAK",
+    period: "Sept 2026 - Present",
+    points: [
+      "Performed manual, API and UI testing on project modules.",
+      "Prepared test cases and executed test scenarios.",
+      "Identified and reported defects; worked on basic automation.",
+    ],
+  },
+  {
     title: "Embedded Systems Test Engineer",
     company: "MRaD Enterprises Pvt Ltd, Kochi",
     period: "Dec 2025 - Mar 2026",
