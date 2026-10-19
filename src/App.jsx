@@ -135,9 +135,7 @@ export default function App() {
             <div className="about-grid">
               <Reveal>
                 <p className="body">
-                  Based in {profile.location}. I started with a manual and automation testing course at AspireIT Academy,
-                  then worked as a QA intern at Cydez Technologies and as an Embedded Systems Test Engineer at MRaD Enterprises.
-                  I am looking for a Software QA role where I can keep growing and help ship reliable products.
+                  Based in {profile.location}. I’m a QA Tester at JIITAK with hands-on experience in UI, functional, and API testing. I have experience in test case design, bug reporting, and retesting using ServiceNow, along with automation testing using Selenium and Java. I’m passionate about improving software quality, learning new technologies, and delivering reliable user experiences.
                 </p>
               </Reveal>
               <Reveal delay={120}>
