@@ -61,7 +61,6 @@ export const education = [
     title: "Bachelor of Vocation (B.Voc) in Information Technology",
     place: "Christ College Autonomous, Irinjalakuda",
     period: "Jul 2021 - Apr 2024",
-    note: "CGPA 6.1",
   },
   // {
   //   title: "Higher Secondary Certificate (12th)",
