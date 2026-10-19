@@ -13,10 +13,11 @@ export const profile = {
 
 // Shown in the hero as a test run
 export const checks = [
-  "Manual testing of project modules",
+  "Analysis of requirements",
+  "Create Testcases and Bug Reports",
   "API testing with Postman and Swagger",
   "Automation with Selenium, Java",
-  "Embedded firmware testing on hardware",
+  "Test Documentation",
   "Defect reporting in Jira",
 ];
 
