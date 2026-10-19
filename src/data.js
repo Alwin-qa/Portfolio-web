@@ -23,7 +23,7 @@ export const checks = [
 export const experience = [
   {
     title: "QA Tester",
-    company: "JIITAK",
+    company: "JIITAK, Kochi",
     period: "Sept 2026 - Present",
     points: [
       "Performed manual, API and UI testing on project modules.",
